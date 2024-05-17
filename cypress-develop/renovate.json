@@ -1,0 +1,34 @@
+{
+  "configMigration": true,
+  "dependencyDashboard": true,
+  "extends": [
+    ":semanticPrefixFixDepsChoreOthers",
+    "group:monorepos",
+    "group:recommended",
+    "replacements:all",
+    "workarounds:all"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/system-tests/projects/**"
+  ],
+  "labels": [
+    "type: dependencies"
+  ],
+  "packageRules": [
+    {
+      "automerge": true,
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ]
+    }
+  ],
+  "prConcurrentLimit": 4,
+  "prHourlyLimit": 1,
+  "rangeStrategy": "bump",
+  "separateMultipleMajor": true,
+  "timezone": "America/New_York"
+}
