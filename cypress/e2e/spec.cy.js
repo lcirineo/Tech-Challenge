@@ -1,4 +1,4 @@
-describe('My First Test', () => {
+describe('Transact 7-day plan using declined card', () => {
     beforeEach(() => {
         cy.viewport(1280, 720)
     })
